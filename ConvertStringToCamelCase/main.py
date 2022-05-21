@@ -12,7 +12,8 @@ def to_camel_case(text):
 
 def myfirst(text, reg1):
     my = re.search(reg1, text)
-    if my is None: my = ""
+    if my is None:
+        my = ""
     else:
         my = str(my.group())
     return my
